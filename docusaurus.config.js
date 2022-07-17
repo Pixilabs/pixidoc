@@ -77,7 +77,6 @@ const config = {
           {
             type: 'docsVersion',
             position: 'right',
-            to: '/path',
             label: 'v1.19.3',
           },
           {
