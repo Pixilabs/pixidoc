@@ -98,6 +98,10 @@ Docusaurus has **much more to offer**!
 
 ![Capture d'écran Fonctionnalités 2](./img/feature-2.png)
 
+<details>
+<summary>Afficher le code</summary>
+<div>
+
 ```json
 {
     "type": "features.features-2",
@@ -150,3 +154,5 @@ Docusaurus has **much more to offer**!
     ]
 }
 ```
+</div>
+</details>
