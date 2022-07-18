@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpixidoc=self.webpackChunkpixidoc||[]).push([[315],{2004:a=>{a.exports=JSON.parse('{"label":"facebook","permalink":"/pixidoc/blog/tags/facebook","allTagsPath":"/pixidoc/blog/tags","count":1}')}}]);

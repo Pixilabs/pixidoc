@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpixidoc=self.webpackChunkpixidoc||[]).push([[525],{6816:e=>{e.exports=JSON.parse('{"permalink":"/pixidoc/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

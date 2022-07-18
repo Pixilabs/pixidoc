@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpixidoc=self.webpackChunkpixidoc||[]).push([[153],{44:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/pixidoc/blog/tags/docusaurus","allTagsPath":"/pixidoc/blog/tags","count":4}')}}]);
