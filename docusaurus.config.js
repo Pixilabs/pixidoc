@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Pixidoc',
   tagline: 'Documentation technique',
-  url: 'https://pixidoc.github.io',
-  baseUrl: '/',
+  url: 'https://pixilabs.github.io',
+  baseUrl: '/pixidoc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
