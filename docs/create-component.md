@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Créer un composant
+# Créer une brique
 
 ## Structure de base
 
@@ -13,25 +13,62 @@ La structure de base d'un composant est la suivante :
     "id": "custom_id",
     "type": "folder.component-name",
     "style": {},
-    "spacing": {
-        "top": "y",
-        "bottom": "n"
-    },
-    "options": {} 
+    "spacing": "tb", // ou "bt" ou "t" ou "b"
+    "boxed": "y"
 }
+```
+
+et voici le code HTML associé :
+
+```html
+<div
+    @isset($component['id'])
+        id="{{ $component['id'] }}"
+    @endisset
+    @isset($component['style'])
+        style="{{ @inlineStyle($component['style']) }}"
+    @endisset
+    class="
+        @isset($component['spacing'])
+            @if($component['spacing'] == 't')
+                pt-12 md:pt-24
+            @elseif($component['spacing'] == 'b')
+                pb-12 md:pb-24
+            @elseif($component['spacing'] == 'tb' || $component['spacing'] == 'bt')
+                py-12 md:py-24
+            @endif
+        @endif
+    ">
+    ...
+</div>
+```
+
+et enfin voici le code pour les briques dites `boxed` :
+
+```html
+<div
+    class="
+        @isset($component['boxed'])
+            @if($component['boxed'] == 'y')
+                max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+            @endif
+        @endisset
+    ">
+    ...
+</div>
 ```
 
 ### Propriétés
 
 ---
 
-#### id
+#### `id`
 
 **Requis :** Non
 
 ---
 
-#### type
+#### `type`
 
 **Requis :** Oui
 
@@ -39,27 +76,31 @@ La structure de base d'un composant est la suivante :
 
 ---
 
-#### style
+#### `style`
 
 **Requis :** Non
 
 ---
 
-#### spacing
+#### `spacing`
 
 **Requis :** Non
 
-**Description :** Représente les marges intérieures verticales des composants. `spacing` peut prendre les valeur `y` pour qu'il y ai des marges intérieures, `n` pour qu'il n'y ai pas de marges intérieures ou un object contenant les propriétés `top` et `bottom` pour dissocier le comportement des marges intérieures hautes et basses.
+**Description :** Représente les marges intérieures verticales des composants. `spacing` peut prendre les valeur `t` pour qu'il y ai des marges intérieures supérieures, `b` pour qu'il y ai des marges intérieures inférieures et `tb` ou `bt` pour qu'il y ai des marges intérieures supérieures et inférieures.
 
 ---
 
-#### options
+#### `boxed`
 
 **Requis :** Non
 
-**Description :** Représente les options de configuration proposées par le composant. C'est un objet qui défini les valeurs des options de chaques composants.
+**Description :** La propriété `boxed` permet d'indiquer que l'on veut que la brique soit contrainte au niveau de la largeur.
 
 ---
+
+## Javascript
+
+Si une brique a besoin d'utiliser une librairie JavaScript alors il faut regarder en bas du fichier `welcome.blade.php` au niveau des scripts et suivre la même méthode que ce qui est utilisé.
 
 ## Méthodes
 
