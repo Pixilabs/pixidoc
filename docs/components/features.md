@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Fonctionnalités
 
 You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
@@ -12,7 +8,7 @@ Docusaurus has **much more to offer**!
 
 ![Capture d'écran Fonctionnalités 2](./img/feature-2.png)
 
-**Nom :** `feature-2`
+**Type :** `feature-2`
 
 **Fichier :** `resources/views/components/features/features-2.blade.php`
 
@@ -20,31 +16,31 @@ Docusaurus has **much more to offer**!
 
 ---
 
-#### id
+#### `id`
 
 **Requis :** Non
 
 ---
 
-#### style
+#### `style`
 
 **Requis :** Non
 
 ---
 
-#### features
+#### `features`
 
 **Requis :** Oui
 
 ---
 
-#### features.icon
+#### `features.icon`
 
 **Requis :** Non
 
 ---
 
-#### features.icon.svg
+#### `features.icon.svg`
 
 **Requis :** Oui
 
@@ -52,43 +48,43 @@ Docusaurus has **much more to offer**!
 
 ---
 
-#### features.icon.style
+#### `features.icon.style`
 
 **Requis :** Non
 
 ---
 
-#### features.title
+#### `features.title`
 
 **Requis :** Oui
 
 ---
 
-#### features.title.text
+#### `features.title.text`
 
 **Requis :** Oui
 
 ---
 
-#### features.title.style
+#### `features.title.style`
 
 **Requis :** Non
 
 ---
 
-#### features.paragraph
+#### `features.paragraph`
 
 **Requis :** Oui
 
 ---
 
-#### features.paragraph.text
+#### `features.paragraph.text`
 
 **Requis :** Oui
 
 ---
 
-#### features.paragraph.style
+#### `features.paragraph.style`
 
 **Requis :** Non
 
