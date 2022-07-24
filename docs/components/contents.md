@@ -4,6 +4,8 @@ Les briques **'contenu'** sont accessibles avec `contents.*`.
 
 ## Contenu 5
 
+![Capture d'écran Contenu 5](./img/content-5.png)
+
 **Type :** `content-5`
 
 **Fichier :** `resources/views/components/contents/content-5.blade.php`
